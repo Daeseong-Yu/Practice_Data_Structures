@@ -12,13 +12,13 @@ int main(void) {
 	disPlayQueue(queue);
 	QueueNode dequeueData;
 	dequeueData = dequeue(queue);
-	printf("Dequeued data %d\n", dequeueData.value);
+	printf("Dequeued data - Value: %d / Next: %p\n", dequeueData.value, dequeueData.next);
 	dequeueData = dequeue(queue);
-	printf("Dequeued data %d\n", dequeueData.value);
+	printf("Dequeued data - Value: %d / Next: %p\n", dequeueData.value, dequeueData.next);
 	dequeueData = dequeue(queue);
-	printf("Dequeued data %d\n", dequeueData.value);
+	printf("Dequeued data - Value: %d / Next: %p\n", dequeueData.value, dequeueData.next);
 	dequeueData = dequeue(queue);
-	printf("Dequeued data %d\n", dequeueData.value);
+	printf("Dequeued data - Value: %d / Next: %p\n", dequeueData.value, dequeueData.next);
 
 	initializedQueue(&queue);
 	freeQueue(queue);
